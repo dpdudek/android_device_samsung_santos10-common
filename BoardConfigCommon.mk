@@ -26,6 +26,8 @@ TARGET_BOOTLOADER_BOARD_NAME := clovertrail
 
 # Use dlmalloc
 MALLOC_IMPL := dlmalloc
+#MALLOC_IMPL := jemalloc
+BOARD_MALLOC_ALIGNMENT := 16
 
 # Houdini
 TARGET_CPU_ABI2 := armeabi-v7a
