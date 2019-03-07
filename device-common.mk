@@ -126,7 +126,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.santos10
+		sensors.santos10 \
+    context_hub.default \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.contexthub@1.0-impl \
 
 # Lights
 PRODUCT_PACKAGES += \
