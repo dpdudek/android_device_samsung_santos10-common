@@ -152,4 +152,10 @@ else
   TW_INCLUDE_CRYPTO := true
 
   TW_EXCLUDE_SUPERSU := true
+
+
+  ADDITIONAL_DEFAULT_PROPERTIES += \
+      ro.secure=0 \
+      ro.adb.secure=0 \
+      ro.debuggable=1
 endif
