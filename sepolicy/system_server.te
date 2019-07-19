@@ -1,3 +1,5 @@
+type gps_data_file, file_type, data_file_type;
+
 allow system_server efs_file:dir search;
 allow system_server efs_file:file { open read };
 
