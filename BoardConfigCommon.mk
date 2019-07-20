@@ -88,6 +88,8 @@ BOARD_USES_WRS_OMXIL_CORE := true
 INTEL_VA := true
 BOARD_USES_MRST_OMX := true
 
+#https://groups.google.com/forum/#!topic/android-building/U_IkbMv-_MY
+ASUS_ZENFONE2_LP_BLOBS := true
 BOARD_GLOBAL_CFLAGS += -DASUS_ZENFONE2_LP_BLOBS
 
 # Camera
