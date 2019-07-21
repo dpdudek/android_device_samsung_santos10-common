@@ -57,8 +57,7 @@ LOCAL_SRC_FILES := \
     sensor/SensorManager.cpp \
     ui/GraphicBufferAllocator.cpp \
     ui/GraphicBuffer.cpp \
-    ui/GraphicBufferMapper.cpp \
-    surface-control.cpp
+    ui/GraphicBufferMapper.cpp
 
 LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware libui libgui libsensor libbinder libutils libsync
 LOCAL_MODULE := libshim_camera
