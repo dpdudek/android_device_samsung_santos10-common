@@ -28,6 +28,8 @@
 
 #include <linux/input.h>
 
+#include <cutils/atomic.h>
+
 #include <utils/Atomic.h>
 #include <utils/Log.h>
 

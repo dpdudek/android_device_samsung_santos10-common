@@ -28,6 +28,8 @@
 #include "ui/GraphicBufferMapper.h"
 #include <ui/PixelFormat.h>
 
+#include "ui/GraphicBuffer.h"
+
 namespace android {
 
 // ===========================================================================

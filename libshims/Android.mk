@@ -40,10 +40,10 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    gui/SensorManager.cpp \
+    sensor/SensorManager.cpp \
     crypto.c
 
-LOCAL_SHARED_LIBRARIES := liblog libcutils libgui libbinder libutils
+LOCAL_SHARED_LIBRARIES := liblog libcutils libgui libsensor libbinder libutils
 LOCAL_MODULE := libshim_gps
 LOCAL_MODULE_TAGS := optional
 
@@ -54,13 +54,13 @@ include $(BUILD_SHARED_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    gui/SensorManager.cpp \
+    sensor/SensorManager.cpp \
     ui/GraphicBufferAllocator.cpp \
     ui/GraphicBuffer.cpp \
     ui/GraphicBufferMapper.cpp \
     surface-control.cpp
 
-LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware libui libgui libbinder libutils libsync
+LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware libui libgui libsensor libbinder libutils libsync
 LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
