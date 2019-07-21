@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package org.lineageos.settings.device;
 
 import android.app.Activity;
 import android.app.ActionBar;
@@ -26,14 +26,14 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.cyanogenmod.settings.device.R;
+import org.lineageos.settings.device.R;
 
 import java.util.ArrayList;
 
 public class AdvancedSettings extends Activity {
 
-    public static final String SHARED_PREFERENCES_BASENAME = "com.cyanogenmod.settings.device";
-    public static final String ACTION_UPDATE_PREFERENCES = "com.cyanogenmod.settings.device.UPDATE";
+    public static final String SHARED_PREFERENCES_BASENAME = "org.lineageos.settings.device";
+    public static final String ACTION_UPDATE_PREFERENCES = "org.lineageos.settings.device.UPDATE";
     public static final String KEY_MDNIE_SCENARIO = "mdnie_scenario";
     public static final String KEY_MDNIE_NEGATIVE = "mdnie_negative";
     public static final String KEY_LARGE_KEYS = "large_keys";

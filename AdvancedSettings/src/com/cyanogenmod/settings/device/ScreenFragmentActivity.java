@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package org.lineageos.settings.device;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -30,7 +30,7 @@ import android.preference.PreferenceManager;
 import android.preference.PreferenceScreen;
 import android.util.Log;
 
-import com.cyanogenmod.settings.device.R;
+import org.lineageos.settings.device.R;
 
 public class ScreenFragmentActivity extends PreferenceFragment {
 
