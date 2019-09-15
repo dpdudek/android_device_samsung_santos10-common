@@ -27,7 +27,37 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.dalvik.vm.isa.arm=x86 \
-    ro.enable.native.bridge.exec=1
+    ro.enable.native.bridge.exec=1 \
+		ro.config.low_ram=true \
+		dalvik.vm.checkjni=false \
+		dalvik.vm.verify-bytecode=false \
+		debug.atrace.tags.enableflags=0 \
+		debugtool.anrhistory=0 \
+		logcat.live=disable \
+		net.ipv6.conf.default.disable_ipv6=1 \
+		persist.android.strictmode=0 \
+		persist.brcm.ap_crash=none \
+		persist.brcm.cp_crash=none \
+		persist.brcm.log=none \
+		persist.sys.dalvik.hyperthreading=true \
+		persist.sys.dalvik.multithread=true \
+		persist.sys.force_highendgfx=false \
+		persist.sys.hdmi.on=0 \
+		persist.sys.qc.sub.rdump.on=0 \
+		persist.sys.strict_op_enable=false \
+		persist.sys.strictmode.disable=1 \
+		persist.sys.use_dithering=0 \
+		persist.telephony.support.ipv6=0 \
+		profiler.debugmonitor=false \
+		profiler.force_disable_err_rpt=1 \
+		profiler.force_disable_ulog=1 \
+		profiler.hung.dumpdobugreport=false \
+		profiler.launch=false \
+		ro.config.nocheckin=1 \
+		ro.kernel.android.checkjni=0 \
+		ro.kernel.checkjni=0 \
+		dalvik.vm.isa.x86.features=ssse3
+
 
 # Filesystem
 PRODUCT_PROPERTY_OVERRIDES += \
