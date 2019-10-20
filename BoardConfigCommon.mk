@@ -131,11 +131,16 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_NO_CHARGER_LED := true
 BOARD_HEALTHD_CUSTOM_CHARGER_RES := device/samsung/santos10-common/charger/images
 
+#RECOVERY_VARIANT := twrp
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 ifneq ($(RECOVERY_VARIANT),twrp)
   TARGET_RECOVERY_FSTAB := device/samsung/santos10-common/rootdir/fstab.santos10
 else
+	TW_DEVICE_VERSION := 3
+	TARGET_BUILD_VARIANT := eng
+
   TW_THEME := landscape_hdpi
 
   TARGET_RECOVERY_FSTAB := device/samsung/santos10-common/rootdir/recovery.fstab
